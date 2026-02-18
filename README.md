@@ -41,7 +41,7 @@ A production-ready Task Management REST API built with FastAPI, PostgreSQL, and 
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/Task_Management_System.git
+git clone https://github.com/Yashashviarora/Task_Management_System.git
 cd Task_Management_System
 ```
 
