@@ -90,12 +90,7 @@ docker-compose up --build
 
 ### Option B: Running Without Docker
 ```bash
-# 1. Start PostgreSQL (using Docker)
-docker run -d --name postgres_db \
-  -e POSTGRES_USER=fastapi_user \
-  -e POSTGRES_PASSWORD=fastapi_pass \
-  -e POSTGRES_DB=taskdb \
-  -p 5432:5432 postgres:15
+# 1. docker run -d --name fastapi_postgres -e POSTGRES_USER=fastapi_user -e POSTGRES_PASSWORD=fastapi_pass -e POSTGRES_DB=taskdb -p 5432:5432 -v postgres_data:/var/lib/postgresql/data postgres:15
 
 # 2. Activate poetry environment
 poetry shell
